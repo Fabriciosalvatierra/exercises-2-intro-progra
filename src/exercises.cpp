@@ -31,35 +31,29 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-int pastel;
-    int contador_pasteles = 0;
+int pasteles;
+    int visitas = 0;
 
-    cout << "Ingrese la secuencia de pasteles (0 para sin pastel, 1 para con pastel): " << endl;
+    while (true) {
+        cin >> pasteles;
 
-    while (contador_pasteles < 10) {
-        if (!(cin >> pastel)) {
-            // Limpiar el estado de cin y descartar la entrada no válida
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "Entrada inválida. Por favor, ingrese 0 o 1." << endl;
-            continue; // Saltar al siguiente ciclo del bucle
-        }
-
-        if (pastel == 1) {
-            cout << "Om-nom-nom :P" << endl;
-            contador_pasteles++;
-        } else if (pastel == 0) {
-            cout << "No cake :(" << endl;
+        if (pasteles == 1) {
+            s1 = "Om-nom-nom :P";
+            cout << s1 << endl;
+        } else if (pasteles == 0) {
+            s1 = "No cake :(";
+            cout << s1 << endl;
             break;
-        } else {
-            cout << "Entrada inválida. Por favor, ingrese 0 o 1." << endl;
+        }
+
+        visitas++;
+
+        if (visitas >= 10) {
+            s1 = "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!";
+            cout << s1 << endl;
+            break;
         }
     }
-
-    if (contador_pasteles == 10) {
-        cout << "¡Ya ha comido suficiente pastel!" << endl;
-    }
-}
 }
 
 
