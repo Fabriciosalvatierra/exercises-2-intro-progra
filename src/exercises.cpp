@@ -36,11 +36,7 @@ void exercise_3(string s1) {
 
     cout << "Ingrese la secuencia de pasteles (0 para sin pastel, 1 para con pastel): " << endl;
 
-    while (cin >> pastel) {
-        if (contador_pasteles >= 10) {
-            break;
-        }
-
+    while (contador_pasteles < 10 && cin >> pastel) {
         if (pastel == 1) {
             cout << "Om-nom-nom :P" << endl;
             contador_pasteles++;
@@ -49,6 +45,8 @@ void exercise_3(string s1) {
             break;
         }
     }
+
+string s1 = "Ejemplo";
 
 }
 
