@@ -31,8 +31,9 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-    int s1;
-    char visitas = 0;
+     int pasteles = 1; 
+    int visitas = 0;
+    string s1;
 
     while (true) {
       
