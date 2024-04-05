@@ -32,8 +32,7 @@ for(int i=0; i<s1.size();++i ){
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
   int pasteles;
-  int visitas = 0;
-string s1; 
+    int visitas = 0;
 
     while (true) {
         cin >> pasteles;
@@ -50,7 +49,7 @@ string s1;
         visitas++;
 
         if (visitas >= 10) {
-            s1 = "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!";
+            s1 = "Se ha superado el límite de visitas. ¡Ya no queda más pastel!";
             cout << s1 << endl;
             break;
         }
