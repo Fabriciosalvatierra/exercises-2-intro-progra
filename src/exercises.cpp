@@ -43,10 +43,10 @@ void exercise_3(string s1) {
         if (pasteles == 1) {
             s1 = "Om-nom-nom :P";
             contador_pasteles++;
-            cout << s1 << endl;
+           
         } else if (pasteles == 0) {
             s1 = "No cake :(";
-            cout << s1 << endl;
+          
             break;
         }
 
@@ -54,7 +54,7 @@ void exercise_3(string s1) {
 
         if (visitas >= 10) {
             s1 = "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!";
-            cout << s1 << endl;
+          
             break;
         }
     }
