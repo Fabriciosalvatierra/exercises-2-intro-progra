@@ -47,7 +47,7 @@ void exercise_3(string s1) {
     }
 
 string s1 = "Ejemplo";
-
+exercise_3(s1);
 }
 
 void exercise_4(int n) {
