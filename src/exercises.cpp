@@ -33,6 +33,7 @@ void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
 int pasteles;
     int visitas = 0;
+    string s1; 
 
     while (true) {
         cin >> pasteles;
