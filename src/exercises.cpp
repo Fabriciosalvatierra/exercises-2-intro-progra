@@ -31,22 +31,18 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-  int pastel=0;
-  int contador_pasteles=0;
+    int s1;
+    char visitas = 0;
 
-    while (true>>pastel) {
+    while (true) {
+      
 
-
-      if (contador_pasteles >=10) {
-        break;
-    }
         if (pasteles == 1) {
             s1 = "Om-nom-nom :P";
-            contador_pasteles++;
-           
+            cout << s1 << endl;
         } else if (pasteles == 0) {
             s1 = "No cake :(";
-          
+            cout << s1 << endl;
             break;
         }
 
@@ -54,7 +50,7 @@ void exercise_3(string s1) {
 
         if (visitas >= 10) {
             s1 = "Se ha superado el limite de visitas. ¡Ya no queda mas pastel!";
-          
+            cout << s1 << endl;
             break;
         }
     }
