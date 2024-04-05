@@ -17,6 +17,7 @@ for (int n = 0; n<s1.size(); ++n)
   }
 void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
+int start = 0;
 
 for(int i=0; i<s1.size();++i ){
 
@@ -24,9 +25,7 @@ for(int i=0; i<s1.size();++i ){
 		int length = (i == s1.size() - 1) ? i - start + 1 : i - start;
 		cout<< "[" << s1.substr(start, length) <<"]" << endl; 
             start = i + 1;
-	
 	}
-	
     }
 }
 
