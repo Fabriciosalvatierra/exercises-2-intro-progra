@@ -17,6 +17,17 @@ for (int n = 0; n<s1.size(); ++n)
   }
 void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
+
+for(int i=0; i<s1.size();++i ){
+
+  if((s1[i]==' '|| i == s1.size() - 1) ){
+		int length = (i == s1.size() - 1) ? i - start + 1 : i - start;
+		cout<< "[" << s1.substr(start, length) <<"]" << endl; 
+            start = i + 1;
+	
+	}
+	
+    }
 }
 
 void exercise_3(string s1) {
