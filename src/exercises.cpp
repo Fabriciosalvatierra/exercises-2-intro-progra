@@ -31,17 +31,17 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-  int pasteles;
+  s1;
     int visitas = 0;
 
     while (true) {
-        cin >> pasteles;
+      
 
         if (pasteles == 1) {
-            s1 = "Om-nom-nom :P";
+            1 = "Om-nom-nom :P";
             cout << s1 << endl;
         } else if (pasteles == 0) {
-            s1 = "No cake :(";
+            1 = "No cake :(";
             cout << s1 << endl;
             break;
         }
@@ -55,7 +55,6 @@ void exercise_3(string s1) {
         }
     }
 }
-
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
