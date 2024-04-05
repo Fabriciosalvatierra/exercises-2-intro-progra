@@ -32,16 +32,16 @@ for(int i=0; i<s1.size();++i ){
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
   s1;
-    int visitas = 0;
+   s1= 0;
 
     while (true) {
       
 
         if (pasteles == 1) {
-            cout = "Om-nom-nom :P";
+            s1 = "Om-nom-nom :P";
             cout << s1 << endl;
         } else if (pasteles == 0) {
-            cout = "No cake :(";
+            s1 = "No cake :(";
             cout << s1 << endl;
             break;
         }
