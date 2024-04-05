@@ -38,10 +38,10 @@ void exercise_3(string s1) {
       
 
         if (pasteles == 1) {
-            1 = "Om-nom-nom :P";
+            cout = "Om-nom-nom :P";
             cout << s1 << endl;
         } else if (pasteles == 0) {
-            1 = "No cake :(";
+            cout = "No cake :(";
             cout << s1 << endl;
             break;
         }
