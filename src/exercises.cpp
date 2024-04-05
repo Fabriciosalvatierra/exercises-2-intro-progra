@@ -31,7 +31,7 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-  int pastel = 0;
+   int pastel = 0;
     int contador_pasteles = 0;
 
     cout << "Ingrese la secuencia de pasteles (0 para sin pastel, 1 para con pastel): " << endl;
@@ -43,13 +43,16 @@ void exercise_3(string s1) {
         } else if (pastel == 0) {
             cout << "No cake :(" << endl;
             break;
+        } else {
+            cout << "Entrada inválida. Por favor ingrese 0 o 1." << endl;
         }
     }
 
-
-    string s1 = "Ejemplo";
-    exercise_3(s1);
+    if (contador_pasteles == 10) {
+        cout << "¡Ya ha comido suficiente pastel!" << endl;
+    }
 }
+
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
