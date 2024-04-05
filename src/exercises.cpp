@@ -31,7 +31,7 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-int pastel;
+int pastel = 0;
     int contador_pasteles = 0;
 
     cout << "Ingrese la secuencia de pasteles (0 para sin pastel, 1 para con pastel): " << endl;
@@ -61,7 +61,6 @@ int pastel;
     }
 }
 
-  
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
