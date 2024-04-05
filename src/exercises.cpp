@@ -6,8 +6,8 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-  
-for (int i = 0; i< line.size(); ++i)
+
+for (int n = 0; n<s1.size(); ++n)
     {
         if (s1[n] == ' '){
             cout << n << endl;
