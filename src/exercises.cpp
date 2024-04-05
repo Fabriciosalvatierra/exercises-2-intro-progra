@@ -35,10 +35,14 @@ void exercise_3(string s1) {
   int contador_pasteles=0;
 
     while (true>>pastel) {
-      
 
+
+      if (contador_pasteles >=10) {
+        break;
+    }
         if (pasteles == 1) {
             s1 = "Om-nom-nom :P";
+            contador_pasteles++;
             cout << s1 << endl;
         } else if (pasteles == 0) {
             s1 = "No cake :(";
