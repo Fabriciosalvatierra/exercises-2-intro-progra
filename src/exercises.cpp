@@ -31,17 +31,17 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-int pastel = 0;
+int pastel;
     int contador_pasteles = 0;
 
     cout << "Ingrese la secuencia de pasteles (0 para sin pastel, 1 para con pastel): " << endl;
 
     while (contador_pasteles < 10) {
         if (!(cin >> pastel)) {
-            // Manejar el caso cuando se ingresa algo que no es un número
-            cout << "Por favor, ingrese un número válido." << endl;
-            cin.clear(); // Limpiar el estado de error de cin
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignorar la entrada inválida
+            // Limpiar el estado de cin y descartar la entrada no válida
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Entrada inválida. Por favor, ingrese 0 o 1." << endl;
             continue; // Saltar al siguiente ciclo del bucle
         }
 
@@ -52,7 +52,7 @@ int pastel = 0;
             cout << "No cake :(" << endl;
             break;
         } else {
-            cout << "Entrada inválida. Por favor ingrese 0 o 1." << endl;
+            cout << "Entrada inválida. Por favor, ingrese 0 o 1." << endl;
         }
     }
 
@@ -61,7 +61,6 @@ int pastel = 0;
     }
 }
 
-}
   
 
 void exercise_4(int n) {
