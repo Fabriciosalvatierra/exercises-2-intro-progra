@@ -6,7 +6,7 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-}
+  
 for (int i = 0; i< line.size(); ++i)
     {
         if (s1[n] == ' '){
