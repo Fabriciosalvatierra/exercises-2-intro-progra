@@ -31,10 +31,10 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-  s1;
-   s1= 0;
+  int pastel=0;
+  int contador_pasteles=0;
 
-    while (true) {
+    while (true>>pastel) {
       
 
         if (pasteles == 1) {
