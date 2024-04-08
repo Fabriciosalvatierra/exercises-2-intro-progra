@@ -33,16 +33,19 @@ void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
     int pastel = 0;
     int contador_pasteles = 0;
+    stringstream output;
 
     while (s1 == "1" && contador_pasteles < 10 && cin >> pastel) {
         if (pastel == 1) {
-            cout << "Om-nom-nom :P" << endl;
+            output << "Om-nom-nom :P" << endl;
             contador_pasteles++;
         } else if (pastel == 0) {
-            cout << "No cake :(" << endl;
+            output << "No cake :(" << endl;
             break;
         }
     }
+
+    cout << output.str();
 }
 
 void exercise_4(int n) {
