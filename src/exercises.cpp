@@ -31,10 +31,10 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-   int pastel = 0;
+    int pastel = 0;
     int contador_pasteles = 0;
 
-    while (cin >> pastel) {
+    while (s1 == "1" && cin >> pastel) {
         if (contador_pasteles >= 10) {
             break;
         }
