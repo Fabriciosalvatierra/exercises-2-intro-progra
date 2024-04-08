@@ -31,10 +31,9 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-     std::istringstream iss(s1);
+   std::istringstream iss(s1);
     int pastel = 0;
     int contador_pasteles = 0;
-    std::ostringstream oss;
 
     while (iss >> pastel) {
         if (contador_pasteles >= 10 || pastel == 0) {
@@ -42,18 +41,14 @@ void exercise_3(string s1) {
         }
 
         if (pastel == 1) {
-            oss << "Om-nom-nom :P\n";
+            std::cout << "Om-nom-nom :P\n";
             contador_pasteles++;
+        } else {
+            std::cout << "No cake :(\n";
+            break;
         }
     }
-
-    if (contador_pasteles == 0) {
-        oss << "No cake :(\n";
-    }
-
-    std::cout << oss.str();
 }
-
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
