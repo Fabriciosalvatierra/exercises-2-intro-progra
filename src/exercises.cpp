@@ -31,25 +31,29 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-   int pastel = 0;
+     std::istringstream iss(s1);
+    int pastel = 0;
     int contador_pasteles = 0;
+    std::ostringstream oss;
 
-    cout << "Ingrese la secuencia de pasteles (0 para sin pastel, 1 para con pastel):" << endl;
-
-    while (cin >> pastel) {
-        if (contador_pasteles >= 10) {
+    while (iss >> pastel) {
+        if (contador_pasteles >= 10 || pastel == 0) {
             break;
         }
 
         if (pastel == 1) {
-            cout << "Om-nom-nom :P" << endl;
+            oss << "Om-nom-nom :P\n";
             contador_pasteles++;
-        } else if (pastel == 0) {
-            cout << "No cake :(" << endl;
-            break;
         }
     }
+
+    if (contador_pasteles == 0) {
+        oss << "No cake :(\n";
+    }
+
+    std::cout << oss.str();
 }
+
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
