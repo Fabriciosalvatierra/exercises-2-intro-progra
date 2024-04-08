@@ -31,22 +31,22 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-    int pastel = 0;
+   int pastel = 0;
     int contador_pasteles = 0;
+    stringstream output;
 
-    while (s1 == "1" && cin >> pastel) {
-        if (contador_pasteles >= 10) {
-            break;
-        }
-
+    while (s1 == "1" && contador_pasteles < 10 && cin >> pastel) {
         if (pastel == 1) {
+            output << "Om-nom-nom :P" << endl;
             contador_pasteles++;
         } else if (pastel == 0) {
+            output << "No cake :(" << endl;
             break;
         }
     }
-}
 
+    cout << output.str();
+}
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
 }
