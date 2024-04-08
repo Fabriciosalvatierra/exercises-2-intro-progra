@@ -31,21 +31,24 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-    int pastel = 0;
+   int pastel = 0;
     int contador_pasteles = 0;
-    stringstream output;
 
-    while (s1 == "1" && contador_pasteles < 10 && cin >> pastel) {
+    cout << "Ingrese la secuencia de pasteles (0 para sin pastel, 1 para con pastel):" << endl;
+
+    while (cin >> pastel) {
+        if (contador_pasteles >= 10) {
+            break;
+        }
+
         if (pastel == 1) {
-            output << "Om-nom-nom :P" << endl;
+            cout << "Om-nom-nom :P" << endl;
             contador_pasteles++;
         } else if (pastel == 0) {
-            output << "No cake :(" << endl;
+            cout << "No cake :(" << endl;
             break;
         }
     }
-
-    cout << output.str();
 }
 
 void exercise_4(int n) {
