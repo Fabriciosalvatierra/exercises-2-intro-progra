@@ -31,20 +31,21 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-   int visitas = 0;
+   int pastel = 0;
+    int contador_pasteles = 0;
 
-    while (true) {
-        if (s1 == "1") {
-            cout << "Om-nom-nom :P" << endl;
-        } else if (s1 == "0") {
-            cout << "No cake :(" << endl;
+    cout << "Ingrese la secuencia de pasteles (0 para sin pastel, 1 para con pastel):" << endl;
+
+    while (cin >> pastel) {
+        if (contador_pasteles >= 10) {
             break;
         }
 
-        visitas++;
-
-        if (visitas >= 10) {
-            cout << "Se ha superado el límite de visitas. ¡Ya no queda más pastel!" << endl;
+        if (pastel == 1) {
+            cout << "Om-nom-nom :P" << endl;
+            contador_pasteles++;
+        } else if (pastel == 0) {
+            cout << "No cake :(" << endl;
             break;
         }
     }
