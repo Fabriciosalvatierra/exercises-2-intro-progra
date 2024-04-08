@@ -31,14 +31,14 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-   int visitas = 0;
+    int visitas = 0;
     
     while(true){
         
-        if(s1 > 0){
+        // Comparamos s1 con una cadena, no con un entero, así que debemos usar comillas dobles ""
+        if(s1 == "1"){
             cout << "Om-nom-nom :P" << endl;
-            s1--;
-        } else {
+        } else if(s1 == "0"){
             cout << "No cake :(" << endl;
             break;
         }
@@ -52,7 +52,6 @@ void exercise_3(string s1) {
         
     }
 }
-
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
 }
