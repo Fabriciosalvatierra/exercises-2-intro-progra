@@ -49,7 +49,6 @@ void exercise_3(string s1) {
         }
     }
 }
-}
   
 
 void exercise_4(int n) {
