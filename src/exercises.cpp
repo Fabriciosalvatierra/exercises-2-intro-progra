@@ -40,11 +40,12 @@ void exercise_3(string s1) {
         }
 
         if (pastel == '1') {
-            cout << "Om-nom-nom :P\n" << endl;
+            if (contador_pasteles < 10) {
+                cout << "Om-nom-nom :P" << endl;
+                contador_om_nom_nom++;
+            }
             contador_pasteles++;
-            contador_om_nom_nom++;
         } else if (pastel == '0') {
-            cout << "No cake :(" << endl;
             break;
         }
     }
