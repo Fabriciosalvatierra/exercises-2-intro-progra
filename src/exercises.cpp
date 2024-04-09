@@ -31,10 +31,11 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-   int contador_pasteles = 0;
+  void exercise_3(std::string s1) {
+    int contador_pasteles = 0;
 
     for (char pastel : s1) {
-        if (contador_pasteles >= 10 || pastel != '0' && pastel != '1') {
+        if (contador_pasteles >= 10 || (pastel != '0' && pastel != '1')) {
             break;
         }
 
@@ -48,6 +49,7 @@ void exercise_3(string s1) {
             break;
         }
     }
+}
 }
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
