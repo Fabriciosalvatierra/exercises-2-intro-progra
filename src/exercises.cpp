@@ -47,8 +47,8 @@ void exercise_3(string s1) {
 }
 
 void exercise_3(string s1) {
-    std::string secuencia;
-    std::getline(std::cin, secuencia);
+    string secuencia;
+    getline(cin, secuencia);
 
     exercise_3(secuencia);
 }
