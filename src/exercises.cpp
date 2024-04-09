@@ -46,13 +46,11 @@ void exercise_3(string s1) {
     }
 }
 
-int main() {
+void exercise_3(string s1) {
     std::string secuencia;
     std::getline(std::cin, secuencia);
 
     exercise_3(secuencia);
-
-    return 0;
 }
   
 
