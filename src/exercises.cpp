@@ -31,7 +31,7 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-  int contador_pasteles = 0;
+   int contador_pasteles = 0;
     int contador_om_nom_nom = 0;
 
     for (char pastel : s1) {
@@ -40,15 +40,15 @@ void exercise_3(string s1) {
         }
 
         if (pastel == '1') {
-            if (contador_pasteles < 10) {
-                cout << "Om-nom-nom :P" << endl;
+            contador_pasteles++;
+            if (contador_pasteles <= 10) {
                 contador_om_nom_nom++;
             }
-            contador_pasteles++;
         } else if (pastel == '0') {
             break;
         }
     }
+
 }
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
