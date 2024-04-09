@@ -33,15 +33,15 @@ void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
    int contador_pasteles = 0;
 
-    for (char pastel : s1) {
-        if (contador_pasteles >= 10 || pastel != '0' && pastel != '1') {
+    for (auto c : s1) {
+        if (contador_pasteles >= 10 || c == '0') {
+            cout << "No cake :(\n";
             break;
         }
 
-        if (pastel == '1') {
+        if (c == '1') {
             contador_pasteles++;
-        } else if (pastel == '0') {
-            break;
+            cout << "Om-nom-nom :P\n";
         }
     }
 }
