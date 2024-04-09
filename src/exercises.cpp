@@ -35,9 +35,12 @@ void exercise_3(string s1) {
    int contador_pasteles = 0;
 
     for (auto c : s1) {
-        if (contador_pasteles >= 10 || c == '0') {
+        if (c == '0') {
             cout << "No cake :(\n";
             break;
+        }
+        if(contador_pasteles >= 10){
+          break;
         }
 
         if (c == '1') {
