@@ -31,9 +31,7 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-  void exercise_3(string s1) {
-    int contador_pasteles = 0;
-    int contador_om_nom_nom = 0;
+   int contador_pasteles = 0;
 
     for (char pastel : s1) {
         if (contador_pasteles >= 10 || pastel != '0' && pastel != '1') {
@@ -41,28 +39,20 @@ void exercise_3(string s1) {
         }
 
         if (pastel == '1') {
-            if (contador_pasteles < 10) {
-                cout << "Om-nom-nom :P" << endl;
-                contador_om_nom_nom++;
-            }
             contador_pasteles++;
         } else if (pastel == '0') {
-            cout << "No cake :(" << endl;
             break;
         }
     }
-
-    
 }
+
 int main() {
-    string secuencia;
-    cout << "Ingrese la secuencia de pasteles (0 para sin pastel, 1 para con pastel): ";
-    getline(cin, secuencia);
+    std::string secuencia;
+    std::getline(std::cin, secuencia);
 
     exercise_3(secuencia);
- return 0;
-}
 
+    return 0;
 }
   
 
