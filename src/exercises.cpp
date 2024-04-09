@@ -40,7 +40,7 @@ void exercise_3(string s1) {
         }
 
         if (pastel == '1') {
-            cout << "Om-nom-nom :P" << endl;
+            cout << "Om-nom-nom :P\n" << endl;
             contador_pasteles++;
             contador_om_nom_nom++;
         } else if (pastel == '0') {
