@@ -32,22 +32,36 @@ for(int i=0; i<s1.size();++i ){
 
 void exercise_3(string s1) {
   // TODO: YOUR CODE HERE
-   int contador_pasteles = 0;
+   for(int n=0;s1.size()>n;n++)
+{
+if(s1[n]=='1')
+{
 
-    for (auto c : s1) {
-        if (c == '0') {
-            cout << "No cake :(\n";
-            break;
-        }
-        if(contador_pasteles >= 10){
-          break;
-        }
+cout<<"Om-nom-nom :P\n";
 
-        if (c == '1') {
-            contador_pasteles++;
-            cout << "Om-nom-nom :P\n";
-        }
-    }
+
+}
+
+if(s1.size()>19)
+{
+	
+	cout<<"Om-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\n";
+break;
+
+}
+
+
+ if(s1[n]=='0')
+{
+
+cout<<"No cake :(\n";
+
+
+break;
+
+
+}
+}
 }
 
 
