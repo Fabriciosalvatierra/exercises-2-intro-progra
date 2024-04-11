@@ -94,13 +94,13 @@ double factorial = 1;
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-double dia_actual = 1;
+int dia_actual = 1;
 
     if (n == 0) {
         cout << "1" << endl;
     } else if (n <= 0) {
         cout << "El numero es negativo. Intentelo de nuevo" << endl;
-    } else if (n > 19) {
+    } else if (n >k) {
         cout << "El numero es muy grande. Intentelo de nuevo" << endl;
     } else {
         
