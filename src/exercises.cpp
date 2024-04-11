@@ -134,14 +134,9 @@ int main() {
             dia_actual++;
         }
     }
-
-    cout << endl;
-
-    return 0;
-}
       
 }
-
+}
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
   return 0;
