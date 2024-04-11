@@ -107,10 +107,10 @@ int n=0, k=0;
 
     for (int i = n; i <= 7; ++i) {
         if (dia_actual < 10) 
-            cout << " ";
+            cout << " \n  ";
         if (dia_actual > k) 
             cout << "- ";
-        else cout << dia_actual << " ";
+        else cout << dia_actual << "\n";
         if (dia_actual == k) 
         break;
         dia_actual++;
@@ -122,7 +122,7 @@ int n=0, k=0;
         for (int i = 1; i <= 7; ++i) {
             if (dia_actual> k) 
                 cout << "- ";
-            else cout << (dia_actual < 10 ? " " : "") << 
+            else cout << (dia_actual < 10 ? " \n " : "\n ") << 
                 dia_actual<< " ";
             if (dia_actual == k) 
             break;
