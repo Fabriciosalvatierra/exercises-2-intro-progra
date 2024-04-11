@@ -94,41 +94,39 @@ double factorial = 1;
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-int n=0, k=0;
-    cin >> n >> k;
-
-    int dia_actual= 1;
-
-    
-    for (int i = 1; i < n; ++i) {
-        cout << "   ";
-    }
-
-
-    for (int i = n; i <= 7; ++i) {
-        if (dia_actual < 10) 
-            cout << " \n  ";
-        if (dia_actual > k) 
-            cout << "- ";
-        else cout << dia_actual << "\n";
-        if (dia_actual == k) 
-        break;
-        dia_actual++;
-    }
-
-  
-    while (dia_actual < k) {
-        cout << endl;
-        for (int i = 1; i <= 7; ++i) {
-            if (dia_actual> k) 
-                cout << "- ";
-            else cout << (dia_actual < 10 ? " \n " : "\n ") << 
-                dia_actual<< " ";
-            if (dia_actual == k) 
-            break;
-            dia_actual++;
+int current_day = 1;
+    for (int day = 1; day <= 31; ++day) {
+        if (current_day == 1) {
+           
+            for (int i = 1; i < n; ++i) {
+               cout << "   ";
+            }
         }
+
+        if (current_day < 10) {
+            cout << " ";
+        }
+
+        if (current_day > k) {
+            cout << "- "; 
+        } else {
+            cout << current_day << " \n";
+        }
+
+        
+        if (current_day % 7 == (8 - n) % 7) {
+            
+            cout << std::endl;
+        }
+
+        if (current_day == k) {
+            break; 
+        }
+
+        ++current_day;
     }
+
+    cout << endl;
 }
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
