@@ -67,7 +67,7 @@ break;
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
-  int numero = n;
+  int n = n;
     int factorial = 1;
 
     if (numero < 0) {
