@@ -67,7 +67,7 @@ break;
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
-  int numero=0;
+  int numero=n;
     int factorial=1;
 
     while(true){
@@ -76,7 +76,7 @@ void exercise_4(int n) {
 
     if( numero <0 ){
         cout<<"El numero debe ser no negativo Por favor intente denuevo:"<<endl;
-        continue;
+       
     }
     for(int numero = 1;numero <=numero; ++i){
         factorial*=i;
