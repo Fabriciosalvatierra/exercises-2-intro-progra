@@ -110,7 +110,7 @@ int current_day = 1;
         if (current_day > k) {
             cout << "- "; 
         } else {
-            cout << current_day << " \n";
+            cout << current_day << "  ";
         }
 
         
