@@ -68,7 +68,7 @@ break;
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
    int numero=0;
-    int factorial=1;
+    double  factorial=1;
 
     while(true){
         cout <<"Ingrese un numero no negativo para calcular el factorial:"<<endl;
