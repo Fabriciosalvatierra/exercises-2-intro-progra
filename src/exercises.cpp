@@ -103,30 +103,30 @@ void exercise_5(int n, int k) {
 
     for (int i = n; i <= 7; ++i) {
         if (dia_actual < 10)
-            std::cout << " ";
+          cout << " ";
         if (dia_actual > k)
-            std::cout << "- ";
+            cout << "- ";
         else
-            std::cout << dia_actual << " ";
+            cout << dia_actual << " ";
         if (dia_actual == k)
             break;
         dia_actual++;
     }
 
     while (dia_actual < k) {
-        std::cout << std::endl;
+        cout << endl;
         for (int i = 1; i <= 7; ++i) {
             if (dia_actual > k)
                 std::cout << "- ";
             else
-                std::cout << (dia_actual < 10 ? " " : "") << dia_actual << " ";
+              cout << (dia_actual < 10 ? " " : "") << dia_actual << " ";
             if (dia_actual == k)
                 break;
             dia_actual++;
         }
     }
 
-    std::cout << std::endl;
+    cout << endl;
 }
 
 int exercise_6(int n) {
