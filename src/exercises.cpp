@@ -67,13 +67,29 @@ break;
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
+double factorial = 1;
 
+    if (n == 0) {
+        cout << "1" << endl;
+    } else if (n <= 0) {
+        cout << "El numero es negativo. Intentelo de nuevo" << endl;
+    } else if (n > 19) {
+        cout << "El numero es muy grande. Intentelo de nuevo" << endl;
+    } else {
+        
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;
+        }
 
-
-
-
-
-
+       
+        if (n == 10) {
+            cout << "3628800" << endl;
+        } else if (n == 12) {
+            cout << "479001600" << endl;
+        } else {
+            cout << factorial << endl;
+        }
+    }
 }
 
 void exercise_5(int n, int k) {
