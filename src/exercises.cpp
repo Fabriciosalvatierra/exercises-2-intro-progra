@@ -127,7 +127,7 @@ int dia_actual = 1;
 
     std::cout << std::endl;
 }
-
+}
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
