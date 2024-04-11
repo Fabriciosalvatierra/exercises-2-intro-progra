@@ -94,6 +94,8 @@ double factorial = 1;
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
+   int n=0, k=0;
+    cin >> n >> k;
 int current_day = 1;
     for (int day = 1; day <= 31; ++day) {
         if (current_day == 1) {
