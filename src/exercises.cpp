@@ -84,7 +84,7 @@ void exercise_4(int n) {
 
         if (factorial<0){
             cout<<"El resultado se demora en ser calculado para numero grande. Por favor,intente denuevo con un numero mas pequeno"<<endl;
-            factorial =1;
+            factorial =1n;
             break;
         }
 
