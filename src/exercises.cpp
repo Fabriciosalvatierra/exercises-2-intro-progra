@@ -67,17 +67,15 @@ break;
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
-  int n = n;
+  int numero = n;
     int factorial = 1;
 
-    if (numero < 0) {
-        cout << "El numero debe ser no negativo. Por favor, intente de nuevo." << endl;
-    } else {
-        for (int i = 1; i <= numero; ++i) {
-            factorial *= i;
+    if (numero >= 0) {
+        for (int n = 1; n <= numero; ++numero) {
+            factorial *= n;
 
             if (factorial < 0) {
-                cout << "El resultado se demora en ser calculado para numero grande. Por favor, intente de nuevo con un numero más pequeño." << endl;
+                cout << "El resultado se demora en ser calculado para un número grande. Por favor, intente de nuevo con un número más pequeño." << endl;
                 break;
             }
         }
@@ -85,8 +83,12 @@ void exercise_4(int n) {
         if (factorial > 0) {
             cout << "El factorial de " << numero << " es: " << factorial << endl;
         }
+    } else {
+        cout << "El número debe ser no negativo. Por favor, intente de nuevo." << endl;
     }
 }
+
+
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
 }
