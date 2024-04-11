@@ -67,24 +67,26 @@ break;
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
-for(int n = 1;i <=numero; ++i){
-        factorial*=i;
-         
+  long long factorial = 1; // Usamos long long para manejar números grandes
 
-        if (factorial<0){
-            cout<<"El resultado se demora en ser calculado para numero grande. Por favor,intente denuevo con un numero mas pequeno"<<endl;
-            factorial =1;
-            break;
+    // Verificamos si el número es negativo
+    if (numero < 0) {
+        cout << "No se puede calcular el factorial de un número negativo." << endl;
+        
+    }
+
+    // Calculamos el factorial
+    for (int i = 1; i <= numero; ++i) {
+        factorial *= i;
+
+        // Verificamos si el factorial se vuelve negativo (overflow)
+        if (factorial < 0) {
+            cout << "El resultado es demasiado grande para ser calculado." << endl;
+    
         }
-
     }
 
-    if(factorial>0) {
-    cout << "El factorial de " << numero << " es: " << factorial << endl;
-            break;
-    }
 }
-
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
