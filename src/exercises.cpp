@@ -67,27 +67,37 @@ break;
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
-  int numero = n;
-    int factorial = 1;
+  int numero=0;
+    int factorial=1;
 
-    if (numero >= 0) {
-        for (int n = 1; n <= numero; ++numero) {
-            factorial *= n;
+    while(true){
+        cout <<"Ingrese un numero no negativo para calcular el factorial:"<<endl;
+        cin>>numero;
 
-            if (factorial < 0) {
-                cout << "El resultado se demora en ser calculado para un número grande. Por favor, intente de nuevo con un número más pequeño." << endl;
-                break;
-            }
+    if( numero <0 ){
+        cout<<"El numero debe ser no negativo Por favor intente denuevo:"<<endl;
+        continue;
+    }
+    for(int numero = 1;numero <=numero; ++i){
+        factorial*=i;
+         
+
+        if (factorial<0){
+            cout<<"El resultado se demora en ser calculado para numero grande. Por favor,intente denuevo con un numero mas pequeno"<<endl;
+            factorial =1;
+            break;
         }
 
-        if (factorial > 0) {
-            cout << "El factorial de " << numero << " es: " << factorial << endl;
-        }
-    } else {
-        cout << "El número debe ser no negativo. Por favor, intente de nuevo." << endl;
+    }
+
+    if(factorial>0) {
+    cout << "El factorial de " << numero << " es: " << factorial << endl;
+            break;
     }
 }
 
+  
+}
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
