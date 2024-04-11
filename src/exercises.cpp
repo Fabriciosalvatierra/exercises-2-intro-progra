@@ -117,16 +117,19 @@ int n=0, k=0;
     }
 
   
-    
-        if (n == 10) {
-            cout << "1\n" << endl;
-        } else if (n == 12) {
-            cout << "7\n" << endl;
-        } else {
-            cout << "   "<< endl;
+    while (dia_actual < k) {
+        cout << endl;
+        for (int i = 1; i <= 7; ++i) {
+            if (dia_actual> k) 
+                cout << "- ";
+            else cout << (dia_actual < 10 ? " " : "") << 
+                dia_actual<< " ";
+            if (dia_actual == k) 
+            break;
+            dia_actual++;
         }
     }
-
+}
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
   return 0;
