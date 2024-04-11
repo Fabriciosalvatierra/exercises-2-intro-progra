@@ -94,6 +94,39 @@ double factorial = 1;
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
+
+   int dia_actual = 1;
+
+    for (int i = 1; i < n; ++i) {
+        std::cout << "   ";
+    }
+
+    for (int i = n; i <= 7; ++i) {
+        if (dia_actual < 10)
+            std::cout << " ";
+        if (dia_actual > k)
+            std::cout << "- ";
+        else
+            std::cout << dia_actual << " ";
+        if (dia_actual == k)
+            break;
+        dia_actual++;
+    }
+
+    while (dia_actual < k) {
+        std::cout << std::endl;
+        for (int i = 1; i <= 7; ++i) {
+            if (dia_actual > k)
+                std::cout << "- ";
+            else
+                std::cout << (dia_actual < 10 ? " " : "") << dia_actual << " ";
+            if (dia_actual == k)
+                break;
+            dia_actual++;
+        }
+    }
+
+    std::cout << std::endl;
 }
 
 int exercise_6(int n) {
