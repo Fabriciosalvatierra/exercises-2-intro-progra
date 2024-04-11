@@ -94,24 +94,16 @@ double factorial = 1;
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-#include <iostream>
+int k=0;
+int dia_actual= 1;
 
-using namespace std;
+if (n==0){
 
-int main() {
-    int n=0, k=0;
-    cin >> n >> k;
-
-    int dia_actual= 1;
-
-    
-    for (int i = 1; i < n; ++i) {
+for (int i = 1; i < n; ++i) {
         cout << "   ";
     }
-
-
-    for (int i = n; i <= 7; ++i) {
-        if (dia_actual < 10) 
+for (int i = n; i <= 7; ++i) {
+        if (dia_actual < 10) \n;
             cout << " ";
         if (dia_actual > k) 
             cout << "- ";
@@ -120,23 +112,10 @@ int main() {
         break;
         dia_actual++;
     }
+} 
+   
+}
 
-  
-    while (dia_actual < k) {
-        cout << endl;
-        for (int i = 1; i <= 7; ++i) {
-            if (dia_actual> k) 
-                cout << "- ";
-            else cout << (dia_actual < 10 ? " " : "") << 
-                dia_actual<< " ";
-            if (dia_actual == k) 
-            break;
-            dia_actual++;
-        }
-    }
-      
-}
-}
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
   return 0;
