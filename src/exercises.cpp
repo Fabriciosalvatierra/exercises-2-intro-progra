@@ -105,7 +105,7 @@ int dia_actual = 1;
     } else {
         
         for (int i = 1; i <= n; i++) {
-            factorial *= i;
+        
         }
 
        
