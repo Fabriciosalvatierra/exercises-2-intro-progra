@@ -94,27 +94,19 @@ double factorial = 1;
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
- int n=0, k=0;
+int n=0, k=0;
     cin >> n >> k;
 
     int dia_actual= 1;
 
-    }else if (n <= k)
-        cout << "mprime el mes del calendario dado el primer día" << endl;
-    } else if (n > ) {
-        cout << "El numero es muy grande. Intentelo de nuevo" << endl;
-    } else {
-        
-        for (int i = 1; i <= n; i++) {
-            factorial *= i;
-        }
-
-
-for (int i = 1; i < n; ++i) {
+    
+    for (int i = 1; i < n; ++i) {
         cout << "   ";
     }
-for (int i = n; i <= 7; ++i) {
-        if (dia_actual < 10) \n;
+
+
+    for (int i = n; i <= 7; ++i) {
+        if (dia_actual < 10) 
             cout << " ";
         if (dia_actual > k) 
             cout << "- ";
@@ -123,9 +115,8 @@ for (int i = n; i <= 7; ++i) {
         break;
         dia_actual++;
     }
-} 
-   
 
+}
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
