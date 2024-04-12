@@ -101,7 +101,7 @@ void exercise_5(int n, int k) {
     for (int day = 1; day <= k; ++day) {
         if (current_day == 1) {
             for (int i = 1; i < n; ++i) {
-                std::cout << "   ";
+                cout << "   ";
             }
         }
 
@@ -116,7 +116,7 @@ void exercise_5(int n, int k) {
         }
 
        if (current_day % 7 == (8 - n) % 7) {
-            cout << std::endl;
+            cout << endl;
         }
 
         if (current_day == k) {
@@ -126,6 +126,7 @@ void exercise_5(int n, int k) {
         ++current_day;
     }
 
+  cout << endl;
 }
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
