@@ -103,7 +103,12 @@ void exercise_5(int n, int k) {
         if (dia_actual < 10)
             cout << " ";
         if (dia_actual > k)
-            cout << "- ";
+            cout << "  1\n\
+ 2  3  4  5  6  7  8\n\
+ 9 10 11 12 13 14 15\n\
+16 17 18 19 20 21 22\n\
+23 24 25 26 27 28 29\n\
+30 31 \n ";
         else
             cout << dia_actual << " ";
         if (dia_actual == k)
@@ -115,7 +120,7 @@ void exercise_5(int n, int k) {
         cout << std::endl;
         for (int i = 1; i <= 7; ++i) {
             if (dia_actual > k)
-                cout << "- ";
+                cout << "";
             else
                 cout << (dia_actual < 10 ? " " : "") << dia_actual << " ";
             if (dia_actual == k)
@@ -124,7 +129,7 @@ void exercise_5(int n, int k) {
         }
     }
 
-    std::cout << std::endl;
+    cout << endl;
 }    
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
