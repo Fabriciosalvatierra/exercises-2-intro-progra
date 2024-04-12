@@ -93,42 +93,31 @@ double factorial = 1;
 }
 
 void exercise_5(int n, int k) {
-   int dia_actual = 1;
+    int diaActual = 1;
 
-    for (int n = 1; n < k; ++i) {
+    // Imprimir espacios para alinear el primer día de la semana
+    for (int i = 1; i < n; ++i) {
         cout << "   ";
     }
 
-    for (int n = 1; k <= 7; ++i) {
-        if (dia_actual < 10)
+    // Imprimir los días del mes
+    for (int dia = 1; dia <= k; ++dia) {
+        // Añadir un espacio antes de los días menores que 10
+        if (diaActual < 10)
             cout << " ";
-        if (dia_actual > k)
-            cout << " ";
-        else
-            cout << dia_actual << "  ";
-        if (dia_actual == k)
-            break;
-        dia_actual++;
-    }
+        
+        // Imprimir el día actual
+        cout << diaActual << " ";
 
-  double (dia_actual < k) {
-        cout << endl;
-        for (int n = 1; k <= 7; ++i) {
-            if (dia_actual > k)
-                cout << "";
-            else
-                cout << (dia_actual < 10 ? " " : "") << dia_actual << "  ";
-            if (dia_actual == k)
-                break;
-            dia_actual++;
+        // Ir al siguiente día
+        if ((diaActual + n - 1) % 7 == 0 || dia == k) {
+            cout << endl;
+            diaActual = 1;
+        } else {
+            diaActual++;
         }
     }
-
-    cout << endl;
-}    
-int exercise_6(int n) {
-  // TODO: YOUR CODE HERE
-  return 0;
+    cout << std::endl;
 }
 
 void exercise_7(int n) {
