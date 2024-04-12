@@ -93,31 +93,38 @@ double factorial = 1;
 }
 
 void exercise_5(int n, int k) {
-    int diaActual = 1;
+  
+ int current_day = 1;
 
-    
+    // Imprimir espacios en blanco para alinear el primer día de la semana
     for (int i = 1; i < n; ++i) {
         cout << "   ";
     }
 
     
-    for (int dia = 1; dia <= k; ++dia) {
-        
-        if (diaActual < 10)
+    for (int day = 1; day <= k; ++day) {
+        // Imprimir el día actual con el formato deseado
+        if (current_day < 10)
             cout << " ";
-        
-     
-        cout << diaActual << " ";
+        cout << current_day;
 
-        
-        if ((diaActual + n - 1) % 7 == 0 || dia == k) {
+        // Si no es el último día y el día actual es menor a 9, imprimir un espacio adicional
+        if (day < k && current_day < 9)
+            cout << " ";
+
+        // Ir al siguiente día
+        if ((current_day + n - 1) % 7 == 0 || day == k) {
             cout << endl;
-            diaActual = 1;
+            current_day = 1;
         } else {
-            diaActual++;
+            current_day++;
         }
     }
-    cout << :endl;
+}
+
+int exercise_6(int n) {
+  // TODO: YOUR CODE HERE
+  return 0;
 }
 
 void exercise_7(int n) {
