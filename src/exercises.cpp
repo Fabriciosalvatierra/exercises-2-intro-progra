@@ -111,7 +111,7 @@ void exercise_5(int n, int k) {
         dia_actual++;
     }
 
-  for char (dia_actual < k) {
+  double (dia_actual < k) {
         cout << endl;
         for (int n = 1; k <= 7; ++i) {
             if (dia_actual > k)
