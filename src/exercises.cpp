@@ -94,40 +94,48 @@ double factorial = 1;
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
-  int current_day = 1;
-    int n = 7; 
-    int k = 31; 
-
-    for (int day = 1; day <= k; ++day) {
-        if (current_day == 1) {
-            for (int i = 1; i < n; ++i) {
-                cout << "   ";
-            }
-        }
-
-        if (current_day < 10) {
-            cout << " ";
-        }
-
-        if (current_day > k) {
-            cout << "- "; 
-        } else {
-            cout << current_day << " ";
-        }
-
-       if (current_day % 7 == (8 - n) % 7) {
-            cout << endl;
-        }
-
-        if (current_day == k) {
-            break; 
-        }
-
-        dia_actual++;;
+  for (int k = 1; k < n; ++i) {
+        cout << "   ";
     }
+   for(int n=0;s1.size()>n;n++)
+{
+if(s1[n]=='1')
+{
 
-  cout << endl;
+
+
+
 }
+
+if(n.size( )>k)
+{
+  
+  cout<<" 1\n\
+ 2  3  4  5  6  7  8\n\
+ 9 10 11 12 13 14 15\n\
+16 17 18 19 20 21 22\n\
+23 24 25 26 27 28 29\n\
+30 31 \n";
+;
+break;
+
+}
+
+
+ if(s1[n]=='0')
+{
+
+cout<<"No cake :(\n";
+
+
+break;
+
+
+}
+}
+
+
+        
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
   return 0;
