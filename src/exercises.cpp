@@ -115,7 +115,6 @@ void exercise_5(int n, int k) {
     cout << endl;
 }
 
-}
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
