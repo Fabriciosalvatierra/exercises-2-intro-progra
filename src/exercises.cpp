@@ -117,7 +117,7 @@ void exercise_5(int n, int k) {
             diaActual++;
         }
     }
-    cout << std::endl;
+    cout << :endl;
 }
 
 void exercise_7(int n) {
