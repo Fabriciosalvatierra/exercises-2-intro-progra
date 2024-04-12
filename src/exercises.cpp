@@ -93,9 +93,7 @@ double factorial = 1;
 }
 
 void exercise_5(int n, int k) {
- 
-    void exercise_5(int n, int k) {
-    cout << "                   " << 1 << "\n";
+    cout << "                  " << 1 << "\n";
 
     int dia_actual = 2;
 
