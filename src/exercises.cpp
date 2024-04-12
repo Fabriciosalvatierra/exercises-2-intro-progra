@@ -95,27 +95,17 @@ double factorial = 1;
 void exercise_5(int n, int k) {
    int dia_actual = 1;
 
-    for (int i = 1; i < n; ++i) {
+    for (int n = 1; n < k; ++i) {
         cout << "   ";
     }
 
-    for (int i = n; i <= 7; ++i) {
+    for (int n = 1; k <= 7; ++i) {
         if (dia_actual < 10)
             cout << " ";
         if (dia_actual > k)
-            cout << "  1\n
- 2  3  4  5  6  7  8\n
- 9 10 11 12 13 14 15\n
-16 17 18 19 20 21 22\n
-23 24 25 26 27 28 29\n
-30 31 \n ";
+            cout << " ";
         else
-            cout << dia_actual << "  1\n\
- 2  3  4  5  6  7  8\n
- 9 10 11 12 13 14 15\n
-16 17 18 19 20 21 22\n
-23 24 25 26 27 28 29\n
-30 31 \n ";
+            cout << dia_actual << "  ";
         if (dia_actual == k)
             break;
         dia_actual++;
@@ -123,16 +113,11 @@ void exercise_5(int n, int k) {
 
   for char (dia_actual < k) {
         cout << endl;
-        for (int i = 1; i <= 7; ++i) {
+        for (int n = 1; k <= 7; ++i) {
             if (dia_actual > k)
                 cout << "";
             else
-                cout << (dia_actual < 10 ? " " : "") << dia_actual << "  1\n
- 2  3  4  5  6  7  8\n
- 9 10 11 12 13 14 15\n
-16 17 18 19 20 21 22\n
-23 24 25 26 27 28 29\n
-30 31 \n ";
+                cout << (dia_actual < 10 ? " " : "") << dia_actual << "  ";
             if (dia_actual == k)
                 break;
             dia_actual++;
