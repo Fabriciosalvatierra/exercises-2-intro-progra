@@ -95,21 +95,21 @@ double factorial = 1;
 void exercise_5(int n, int k) {
     int diaActual = 1;
 
-    // Imprimir espacios para alinear el primer día de la semana
+    
     for (int i = 1; i < n; ++i) {
         cout << "   ";
     }
 
-    // Imprimir los días del mes
+    
     for (int dia = 1; dia <= k; ++dia) {
-        // Añadir un espacio antes de los días menores que 10
+        
         if (diaActual < 10)
             cout << " ";
         
-        // Imprimir el día actual
+     
         cout << diaActual << " ";
 
-        // Ir al siguiente día
+        
         if ((diaActual + n - 1) % 7 == 0 || dia == k) {
             cout << endl;
             diaActual = 1;
