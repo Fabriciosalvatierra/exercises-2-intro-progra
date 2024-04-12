@@ -94,7 +94,8 @@ double factorial = 1;
 
 void exercise_5(int n, int k) {
  
-    cout << "                   " << 1 << endl;
+    void exercise_5(int n, int k) {
+    cout << "                   " << 1 << "\n";
 
     int dia_actual = 2;
 
@@ -106,13 +107,14 @@ void exercise_5(int n, int k) {
         cout << dia_actual << " ";
 
         if ((dia_actual - 1) % 7 == 0) {
-            cout << endl;
+            cout << "\n";
         }
 
         dia_actual++;
     }
 
-    cout << endl;
+    cout << "\n";
+}
 }
 
 
