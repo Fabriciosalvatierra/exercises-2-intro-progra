@@ -123,7 +123,7 @@ void exercise_5(int n, int k) {
             break; 
         }
 
-        ++current_day;
+        dia_actual++;;
     }
 
   cout << endl;
